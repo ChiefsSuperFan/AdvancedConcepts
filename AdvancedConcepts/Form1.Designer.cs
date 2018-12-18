@@ -31,6 +31,7 @@
             this.btnGenerics = new System.Windows.Forms.Button();
             this.btnListSort = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.txtConsole = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnGenerics
@@ -63,17 +64,28 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
+            // txtConsole
+            // 
+            this.txtConsole.Location = new System.Drawing.Point(698, 357);
+            this.txtConsole.Multiline = true;
+            this.txtConsole.Name = "txtConsole";
+            this.txtConsole.Size = new System.Drawing.Size(706, 259);
+            this.txtConsole.TabIndex = 3;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1637, 773);
+            this.Controls.Add(this.txtConsole);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnListSort);
             this.Controls.Add(this.btnGenerics);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -82,6 +94,7 @@
         private System.Windows.Forms.Button btnGenerics;
         private System.Windows.Forms.Button btnListSort;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox txtConsole;
     }
 }
 

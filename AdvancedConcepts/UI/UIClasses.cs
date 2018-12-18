@@ -94,4 +94,16 @@ namespace AdvancedConcepts.UI
 
         }
         }
+
+
+    //this is an example of create your own
+    //custom event arguments.  This will be
+    //used in the generics form
+    public class ExampleEventArgs:EventArgs
+    {
+        public string SendMessage { get; set; }
+        public DateTime SendDate { get; set; }
+
     }
+
+}
