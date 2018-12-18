@@ -7,26 +7,35 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using AdvancedConcepts.Generics;
 
 namespace AdvancedConcepts
 {
-    public partial class Form1 : Form
+    public partial class frmGenerics : Form
     {
-        public Form1()
+        public frmGenerics()
         {
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            frmGenerics generics = new frmGenerics();
-            generics.ShowDialog();
+            this.Close();
         }
 
-        private void btnListSort_Click(object sender, EventArgs e)
+        private void btnCompare_Click(object sender, EventArgs e)
         {
-            frmSortableList sortableList = new frmSortableList();
-            sortableList.Show();
+            var a = 123;
+
+            var b = 45.6666;
+
+            CompareValue compareValue = new CompareValue();
+
+            var maxValue = compareValue.Max(a, b);
+
+            MessageBox.Show(maxValue.ToString());
+
+
         }
     }
 }
