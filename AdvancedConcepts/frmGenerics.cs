@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using AdvancedConcepts.Generics;
 using AdvancedConcepts.UI;
+using AdvancedConcepts.Classes;
 
 namespace AdvancedConcepts
 {
@@ -72,6 +73,47 @@ namespace AdvancedConcepts
                 //now raise the event
                 OnSendMessage(eArg);
             }
+        }
+
+        private void CreateInstanceExample<T>()
+        {
+            Type generic = typeof(T);
+            var o = Activator.CreateInstance(generic);
+            
+
+
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            //demos how to create an object instance of a 
+            //generic type at runtime!
+            CreateInstanceExample<Customer>();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            //this shows how to combine interfaces and generics
+            //to create a flexible class
+
+            GetName getName = new GetName();
+
+
+            FootballPlayer footballPlayer = new FootballPlayer();
+            footballPlayer.FirstName = "Tom";
+            footballPlayer.LastName = "Brady";
+
+            BasketBallPlayer basketBallPlayer = new BasketBallPlayer();
+            basketBallPlayer.FirstName = "Lebron";
+            basketBallPlayer.LastName = "James";
+
+            string footballName = getName.GetValue<FootballPlayer>(footballPlayer);
+
+            string basketBallName = getName.GetValue<BasketBallPlayer>(basketBallPlayer);
+
+
+
         }
     }
 }

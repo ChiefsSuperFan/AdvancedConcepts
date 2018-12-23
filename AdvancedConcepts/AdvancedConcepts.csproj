@@ -53,6 +53,12 @@
     <Compile Include="frmGenerics.Designer.cs">
       <DependentUpon>frmGenerics.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmOOP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOOP.Designer.cs">
+      <DependentUpon>frmOOP.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmReflection.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +86,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmGenerics.resx">
       <DependentUpon>frmGenerics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOOP.resx">
+      <DependentUpon>frmOOP.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmReflection.resx">
       <DependentUpon>frmReflection.cs</DependentUpon>

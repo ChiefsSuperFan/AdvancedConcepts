@@ -55,5 +55,11 @@ namespace AdvancedConcepts
         {
 
         }
+
+        private void btnOOP_Click(object sender, EventArgs e)
+        {
+            frmOOP oopForm = new frmOOP();
+            oopForm.Show();
+        }
     }
 }

@@ -32,6 +32,7 @@
             this.btnListSort = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.txtConsole = new System.Windows.Forms.TextBox();
+            this.btnOOP = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnGenerics
@@ -72,11 +73,22 @@
             this.txtConsole.Size = new System.Drawing.Size(706, 259);
             this.txtConsole.TabIndex = 3;
             // 
+            // btnOOP
+            // 
+            this.btnOOP.Location = new System.Drawing.Point(82, 392);
+            this.btnOOP.Name = "btnOOP";
+            this.btnOOP.Size = new System.Drawing.Size(193, 68);
+            this.btnOOP.TabIndex = 4;
+            this.btnOOP.Text = "OOP";
+            this.btnOOP.UseVisualStyleBackColor = true;
+            this.btnOOP.Click += new System.EventHandler(this.btnOOP_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1637, 773);
+            this.Controls.Add(this.btnOOP);
             this.Controls.Add(this.txtConsole);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnListSort);
@@ -95,6 +107,7 @@
         private System.Windows.Forms.Button btnListSort;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox txtConsole;
+        private System.Windows.Forms.Button btnOOP;
     }
 }
 
