@@ -32,11 +32,12 @@ namespace AdvancedConcepts.Classes
 
     public class BasketBallPlayer:IAthlete
     {
+        public int PlayerID { get; set; }
         public string TeamName { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        public float Salary { get; set; }
-        public SportType Sport { get; set; } = SportType.Basketball;
+        public int Salary { get; set; }
+        public SportType Sport { get;  set; } = SportType.Basketball;
 
         public BasketBallPlayer()
         {
@@ -51,10 +52,11 @@ namespace AdvancedConcepts.Classes
 
     public class BaseballPlayer:IAthlete
     {
+        public int PlayerID { get; set; }
         public string TeamName { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        public float Salary { get; set; }
+        public int Salary { get; set; }
         public SportType Sport { get; set; } = SportType.Basketball;
    
 
@@ -70,16 +72,26 @@ namespace AdvancedConcepts.Classes
     }
     public class FootballPlayer:IAthlete
     {
+        public int PlayerID { get; set; }
         public string TeamName { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        public float Salary { get; set; }
+        public int Salary { get; set; }
         public SportType Sport { get; set; } = SportType.Football;
      
 
         public  FootballPlayer()
         {
           
+        }
+        public FootballPlayer(int playerID, string teamName, string firstName, string lastName, 
+            int salary)
+        {
+            PlayerID = playerID;
+            FirstName = firstName;
+            LastName = lastName;
+            Salary = salary;
+            TeamName = teamName;
         }
         public void ChangeTeam(string newTeam)
         {
@@ -91,11 +103,12 @@ namespace AdvancedConcepts.Classes
 
     public interface IAthlete
     {
+         int PlayerID { get; set; }
         string TeamName { get; set; }
         string FirstName { get; set; }
         string LastName { get; set;  }
-        float Salary { get; set; }
-        SportType Sport { get; set; }
+        int Salary { get; set; }
+        SportType Sport { get;  set; }
         void ChangeTeam(string newTeam);
 
 

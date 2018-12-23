@@ -61,5 +61,11 @@ namespace AdvancedConcepts
             frmOOP oopForm = new frmOOP();
             oopForm.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            frmLINQ linq = new frmLINQ();
+            linq.Show();
+        }
     }
 }

@@ -33,6 +33,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.txtConsole = new System.Windows.Forms.TextBox();
             this.btnOOP = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnGenerics
@@ -83,11 +84,22 @@
             this.btnOOP.UseVisualStyleBackColor = true;
             this.btnOOP.Click += new System.EventHandler(this.btnOOP_Click);
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(82, 514);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(193, 65);
+            this.button2.TabIndex = 5;
+            this.button2.Text = "LINQ";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1637, 773);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.btnOOP);
             this.Controls.Add(this.txtConsole);
             this.Controls.Add(this.button1);
@@ -108,6 +120,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox txtConsole;
         private System.Windows.Forms.Button btnOOP;
+        private System.Windows.Forms.Button button2;
     }
 }
 

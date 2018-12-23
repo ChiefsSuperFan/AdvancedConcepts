@@ -57,6 +57,7 @@ namespace AdvancedConcepts
 
             //we have added an extension method to return the t sql data type
             //of a value
+           
             TSQLIntegerTypes sqlType = employeeCount.GetSQLType();
         }
     }

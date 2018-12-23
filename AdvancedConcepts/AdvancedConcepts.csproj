@@ -53,6 +53,12 @@
     <Compile Include="frmGenerics.Designer.cs">
       <DependentUpon>frmGenerics.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmLINQ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLINQ.Designer.cs">
+      <DependentUpon>frmLINQ.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmOOP.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,6 +92,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmGenerics.resx">
       <DependentUpon>frmGenerics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLINQ.resx">
+      <DependentUpon>frmLINQ.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmOOP.resx">
       <DependentUpon>frmOOP.cs</DependentUpon>
