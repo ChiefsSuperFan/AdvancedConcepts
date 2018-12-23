@@ -38,6 +38,7 @@ namespace AdvancedConcepts.Classes
         public string LastName { get; set; }
         public int Salary { get; set; }
         public SportType Sport { get;  set; } = SportType.Basketball;
+        public DateTime? BirthDay { get; set; }
 
         public BasketBallPlayer()
         {
@@ -58,7 +59,8 @@ namespace AdvancedConcepts.Classes
         public string LastName { get; set; }
         public int Salary { get; set; }
         public SportType Sport { get; set; } = SportType.Basketball;
-   
+        public DateTime? BirthDay { get; set; }
+
 
         public BaseballPlayer()
         {
@@ -78,6 +80,7 @@ namespace AdvancedConcepts.Classes
         public string LastName { get; set; }
         public int Salary { get; set; }
         public SportType Sport { get; set; } = SportType.Football;
+        public DateTime? BirthDay { get; set; }
      
 
         public  FootballPlayer()
@@ -109,6 +112,9 @@ namespace AdvancedConcepts.Classes
         string LastName { get; set;  }
         int Salary { get; set; }
         SportType Sport { get;  set; }
+
+        //nullable type
+        DateTime? BirthDay { get; set; }
         void ChangeTeam(string newTeam);
 
 

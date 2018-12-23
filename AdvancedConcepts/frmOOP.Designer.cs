@@ -30,6 +30,7 @@
         {
             this.button1 = new System.Windows.Forms.Button();
             this.btnExtensionMethods = new System.Windows.Forms.Button();
+            this.btnNullable = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -52,11 +53,22 @@
             this.btnExtensionMethods.UseVisualStyleBackColor = true;
             this.btnExtensionMethods.Click += new System.EventHandler(this.btnExtensionMethods_Click);
             // 
+            // btnNullable
+            // 
+            this.btnNullable.Location = new System.Drawing.Point(116, 328);
+            this.btnNullable.Name = "btnNullable";
+            this.btnNullable.Size = new System.Drawing.Size(338, 80);
+            this.btnNullable.TabIndex = 2;
+            this.btnNullable.Text = "Nullable Types";
+            this.btnNullable.UseVisualStyleBackColor = true;
+            this.btnNullable.Click += new System.EventHandler(this.btnNullable_Click);
+            // 
             // frmOOP
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1350, 722);
+            this.Controls.Add(this.btnNullable);
             this.Controls.Add(this.btnExtensionMethods);
             this.Controls.Add(this.button1);
             this.Name = "frmOOP";
@@ -69,5 +81,6 @@
 
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnExtensionMethods;
+        private System.Windows.Forms.Button btnNullable;
     }
 }

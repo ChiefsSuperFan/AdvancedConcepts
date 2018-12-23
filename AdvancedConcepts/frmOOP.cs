@@ -60,5 +60,27 @@ namespace AdvancedConcepts
            
             TSQLIntegerTypes sqlType = employeeCount.GetSQLType();
         }
+
+        private void btnNullable_Click(object sender, EventArgs e)
+        {
+            //nullable types allow you to have properties that may sometimes be null
+            //the birthday property of the football player class is an example
+
+            FootballPlayer player1 = new FootballPlayer(1, "Chiefs", "Chris", "Jones", 3000000);
+            FootballPlayer player2 = new FootballPlayer(1, "Chiefs", "Anthony", "Hitchens", 9000000);
+
+            player1.BirthDay = new DateTime(1992, 5, 10);
+
+            if(player1.BirthDay.HasValue)
+            {
+                MessageBox.Show(player1.BirthDay.ToString());
+            }
+
+            if(player2.BirthDay.HasValue)
+            {
+                MessageBox.Show(player2.BirthDay.ToString());
+            }
+
+        }
     }
 }
