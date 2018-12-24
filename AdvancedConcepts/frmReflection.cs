@@ -38,6 +38,8 @@ namespace AdvancedConcepts
                 var memberType = info.MemberType.ToString();
                 output += pName + ", " + memberType + Environment.NewLine;
             }
+
+            string name = type.Name;
             txtConsole.Text = output;
         }
     }

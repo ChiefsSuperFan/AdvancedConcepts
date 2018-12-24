@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using AdvancedConcepts.UI;
+using AdvancedConcepts.DI;
+using AdvancedConcepts.BusinessLayer;
 
 namespace AdvancedConcepts
 {
@@ -66,6 +68,15 @@ namespace AdvancedConcepts
         {
             frmLINQ linq = new frmLINQ();
             linq.Show();
+        }
+
+        private void btnDI_Click(object sender, EventArgs e)
+        {
+            DIContainer container = new DIContainer(3);
+
+            var customer = container.Resolve<BLCustomer>();
+
+            object x=
         }
     }
 }

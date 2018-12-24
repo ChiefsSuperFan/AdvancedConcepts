@@ -34,6 +34,7 @@
             this.txtConsole = new System.Windows.Forms.TextBox();
             this.btnOOP = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.btnDI = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnGenerics
@@ -94,11 +95,22 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // btnDI
+            // 
+            this.btnDI.Location = new System.Drawing.Point(98, 647);
+            this.btnDI.Name = "btnDI";
+            this.btnDI.Size = new System.Drawing.Size(177, 66);
+            this.btnDI.TabIndex = 6;
+            this.btnDI.Text = "button3";
+            this.btnDI.UseVisualStyleBackColor = true;
+            this.btnDI.Click += new System.EventHandler(this.btnDI_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1637, 773);
+            this.Controls.Add(this.btnDI);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btnOOP);
             this.Controls.Add(this.txtConsole);
@@ -121,6 +133,7 @@
         private System.Windows.Forms.TextBox txtConsole;
         private System.Windows.Forms.Button btnOOP;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnDI;
     }
 }
 
