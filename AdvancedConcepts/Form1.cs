@@ -72,11 +72,14 @@ namespace AdvancedConcepts
 
         private void btnDI_Click(object sender, EventArgs e)
         {
-            DIContainer container = new DIContainer(3);
+            frmSubclassControls subclassControls = new frmSubclassControls();
+            subclassControls.Show();
+        }
 
-            var customer = container.Resolve<BLCustomer>();
-
-            object x=
+        private void button3_Click(object sender, EventArgs e)
+        {
+            frmAD ad = new frmAD();
+            ad.Show();
         }
     }
 }

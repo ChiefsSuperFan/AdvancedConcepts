@@ -208,4 +208,26 @@ namespace AdvancedConcepts.Classes
         Int,
         BigInt
     }
+
+    public class Person
+    {
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        //public IJob CurrentOccupation { get; set; }
+
+    }
+
+    public class Job
+    {
+        public string Title { get; set; }
+        public string Company { get; set; }
+    }
+
+    public interface IJob
+    {
+        string Title { get; set; }
+        string Company { get; set; }
+    }
+
+
 }

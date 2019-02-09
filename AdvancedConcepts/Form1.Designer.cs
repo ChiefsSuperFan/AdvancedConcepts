@@ -35,6 +35,7 @@
             this.btnOOP = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.btnDI = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnGenerics
@@ -105,11 +106,22 @@
             this.btnDI.UseVisualStyleBackColor = true;
             this.btnDI.Click += new System.EventHandler(this.btnDI_Click);
             // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(394, 73);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(257, 65);
+            this.button3.TabIndex = 7;
+            this.button3.Text = "Directory Svcs";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1637, 773);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.btnDI);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btnOOP);
@@ -134,6 +146,7 @@
         private System.Windows.Forms.Button btnOOP;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnDI;
+        private System.Windows.Forms.Button button3;
     }
 }
 
